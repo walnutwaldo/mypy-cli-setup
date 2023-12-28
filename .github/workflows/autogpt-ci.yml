@@ -65,6 +65,12 @@ jobs:
         run: poetry run isort . --check
         if: success() || failure()
 
+      - name: Type check with MyPy
+        run: |
+          pip install mypy
+          mypy autogpt/**/*.py tests/**/*.py
+        continue-on-error: true
+
       # - name: Check mypy formatting
       #   run: poetry run mypy
       #   if: success() || failure()
