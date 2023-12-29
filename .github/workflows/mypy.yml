@@ -2,9 +2,9 @@ name: MyPy Type Check
 
 on:
   push:
-    branches: [ main ]
+    branches: [ mypy-setup ]
   pull_request:
-    branches: [ main ]
+    branches: [ mypy-setup ]
 
 jobs:
   typecheck:
@@ -22,3 +22,4 @@ jobs:
         pip install -r requirements.txt
     - name: Run MyPy
       run: mypy .
+

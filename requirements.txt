@@ -5,3 +5,11 @@ sqlalchemy
 pytest
 uvicorn
 chromadb
+gspread
+pandas
+python-dotenv
+oauth2client
+gql
+requests
+beautifulsoup4
+
