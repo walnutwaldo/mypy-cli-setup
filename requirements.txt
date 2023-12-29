@@ -3,3 +3,5 @@ fastapi
 pydantic
 sqlalchemy
 pytest
+uvicorn
+chromadb
