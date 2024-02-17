@@ -79,6 +79,8 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     timeout-minutes: 30
+      - name: Run MyPy checks
+        run: poetry run mypy autogpts/autogpt
     strategy:
       matrix:
         python-version: ["3.10"]
